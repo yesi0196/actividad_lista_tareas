@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <input type="text" id="nuevaTarea" placeholder="Agregar tarea">
+    <select id="state" required>
+        <option value="completed">Completada</option>
+        <option value="pending">Pendiente</option>
+    </select>
+    <button onclick="agregarTarea()">Agregar</button>
+
+    <ul id="listaTareas"></ul>
+
+    <h3 class="mb-3">Tareas Realizadas/Pendientes</h3>
+    <button id="mostrarCompletadas">Mostrar tareas Completadas</button>
+    <button id="mostrarPendientes">Mostrar tareas Pendientes</button>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
